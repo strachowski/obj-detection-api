@@ -1,9 +1,9 @@
 applications:
 - path: .
-  memory: 128M
+  memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: stra-object-recognition
-  host: stra-object-recognition
+  name: obj-detection-api
+  host: obj-detection-api
   disk_quota: 1024M
   buildpack: python_buildpack
