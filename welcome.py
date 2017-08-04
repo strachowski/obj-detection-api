@@ -17,6 +17,21 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+@app.route('/api/objdet/image')
+def GetImage():
+    message = {
+        'message': 'Processing test image'
+    }
+    return jsonify(results=message)
+
+@app.route('/api/objdet/image/<name>')
+def GetImageName(name):
+    message = {
+        'message': 'Processing ' + name
+    }
+    return jsonify(results=message)
+
+
 @app.route('/')
 def Welcome():
     return app.send_static_file('index.html')
