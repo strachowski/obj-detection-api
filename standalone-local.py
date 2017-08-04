@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
 # Replace with your api key
-visual_recognition = VisualRecognitionV3('2016-05-20', api_key='ee876931a3479a9c4c1877af46267fb4e68df45e')
+visual_recognition = VisualRecognitionV3('2016-05-20', api_key='API-KEY')
 
 MAX_NUMBER_OF_BOXES = 10
 MINIMUM_CONFIDENCE = 0.6
@@ -60,7 +60,7 @@ def load_image_into_numpy_array(image):
     (im_height, im_width, 3)).astype(np.uint8)
 
 # Path to test image, "test_image/image1.jpg"
-TEST_IMAGE_PATH = 'test_image/image2.jpg'
+TEST_IMAGE_PATH = 'test_image/image1.jpg'
 
 print('detecting...')
 with detection_graph.as_default():
